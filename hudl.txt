@@ -1,0 +1,158 @@
+
+As a Hudl Coach, I want to have the ability to update my team schedule, so that I can keep the team up to date if my schedule information changes. 
+
+Coach Workflow
+
+
+Scenario: An active user can retrieve the list of schedule entries.
+
+Prerequisites:
+API endpoint has a 'GET' method
+A valid access token for the active user in the header
+
+Expected result: Response HTTP 200 OK status code 
+
+
+{
+
+gameId: "1234567",
+
+sqlId: "1234567",
+
+date: "2016-01-01T19:00:00",
+
+opponent: "TestOpponent",
+
+opponentId: "123456",
+
+isHome: true,
+
+gameType: 0,
+
+categories: [ ]
+
+}
+
+The user should see the date opponent, category in the FE. Id's should not be visible
+
+
+
+Scenario: A valid user can update opponent entry 
+
+Prerequisites:
+
+API endpoint has a 'PUT' method
+
+A valid access token for the user in the header
+
+"opponent" value provided in the body:
+opponent: "BCNOpponent"
+Content-Type: application/json in the header
+
+
+Expected result: Response HTTP 200 OK status code
+
+
+{
+
+gameId: "1234567",
+
+sqlId: "1234567",
+
+date: "2016-01-01T19:00:00",
+
+opponent: "BCNOpponent",
+
+opponentId: "123456",
+
+isHome: true,
+
+gameType: 0,
+
+categories: [ ]
+
+}
+
+The coach should be able to se the updated opponent to BCNOpponent filed in the FE and a success message ex: "The team details has been updated"
+
+
+Scenario: A valid user can create a new schedule entry
+
+Prerequisites: 
+API endpoint has a 'POST' method
+A valid access token for the user in the header
+Content-Type: application/json in the header
+
+Body:
+
+{
+    "status": "live",
+
+}
+
+Expected result: Response HTTP 200 OK status code and the response should be updated with a new field in the JSON
+
+
+{
+
+gameId: "1234567",
+
+sqlId: "1234567",
+
+date: "2016-01-01T19:00:00",
+
+opponent: "TestOpponent",
+
+opponentId: "123456",
+
+isHome: true,
+
+gameType: 0,
+
+status: live,
+
+categories: [ ]
+
+}
+
+The new  "live" entry should be visible in the front end after is implemented 
+
+Scenario: A valid user can remove "date" schedule entry
+Prerequisites: 
+API endpoint has a 'DELETE' method
+A valid access token for the user in the header
+Content-Type: application/json in the header
+
+
+Expected result: Response HTTP 204 OK status code and the response should be updated with no data object in the JSON
+
+{
+
+gameId: "1234567",
+
+sqlId: "1234567",
+
+opponent: "TestOpponent",
+
+opponentId: "123456",
+
+isHome: true,
+
+gameType: 0,
+
+status: live,
+
+categories: [ ]
+
+}
+
+The date field should be hidden on the FE side if it has been deleted in the BE
+
+Negative results: 
+
+I should get 404 response if the user does not exist
+I should get 403 response if a current user has been disabled
+I should get 401 response if the user auth has failed
+I should get 500 response if the server there is a server error(no db connection)
+
+

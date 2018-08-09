@@ -9,7 +9,6 @@ from features.steps.locators import locator
 def step_impl(context):
     context.browser.get('hudl.com/login/')
     context.browser.find_element(By.XPATH,locator.landing)
-    context.browser.find_element(By.XPATH,locator.tbd)
 
 @when(u'user is successfully logged in as "{email}"')
 def step_impl(context):

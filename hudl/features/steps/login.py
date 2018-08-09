@@ -28,7 +28,7 @@ def invalid_password_and_email_inputs(context, email, password):
 
 @when ('user signs in without email and password')
 def missing_fields_login(context):
-    pass
+    pass 
 
 
 @then ('an error message "{error_message}" will be displayed')

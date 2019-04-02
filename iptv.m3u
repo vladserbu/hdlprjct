@@ -1,0 +1,68 @@
+﻿#EXTM3U 23:22 01.04.2019
+
+
+#EXTINF:0,Accent TV
+http://video.a-tv.md/hls/accent.m3u8
+
+#EXTINF:0,Agro TV Moldova
+http://web.sats.gstv.tech/cpl11/540d63d5-8910-4a20-ac15-a7bfcca9dbd3/agrotvweb.m3u8
+
+#EXTINF:0,Bălți TV
+http://77.89.199.174:81/hls/live2.m3u8
+
+#EXTINF:0,Busuioc TV
+https://web.sats.gstv.tech/cpl/21b7bed4-9e50-4bed-8668-9be455cc4e11/busuioctv.m3u8
+
+#EXTINF:0,Canal 2
+http://91.230.214.75/LIVE/2/index.m3u8
+
+#EXTINF:0,Canal 3
+http://91.230.214.75/LIVE/3/2000.m3u8
+
+#EXTINF:0,Canal Regional
+https://canalregional.md/tv/live/canalregional.m3u8
+
+#EXTINF:0,Drochia TV
+https://hls.drochia.tv/tv/web.m3u8
+
+#EXTINF:0,Elita TV
+http://46.55.111.242:8080/Rezina.m3u8
+
+#EXTINF:0,Gold TV
+http://goldtv.md:1935/live/GOLDTV1.stream_aac/playlist.m3u8
+
+#EXTINF:0,Jurnal TV
+http://live.cdn.jurnaltv.md/JurnalTV_HD/tracks-v1a1/index.m3u8?token=696671e5dfb221783d170bc2effd7786374b9434
+
+#EXTINF:0,Moldova 1
+http://live.trm.md:1935/live/_definst_/MoldovaUnu1/chunklist_w866294327.m3u8
+
+#EXTINF:0,Moldova 2
+http://live.trm.md:1935/live/_definst_/MoldovaDoi2/chunklist_w1306778223.m3u8
+
+#EXTINF:0,Noroc TV
+http://live.noroc.tv/hls/noroctv_chisinau.m3u8
+
+#EXTINF:0,НТВ Молдова
+http://93.115.137.166/hls/ntvm.m3u8
+
+#EXTINF:0,Prime
+http://91.230.214.75/LIVE/1/2000.m3u8
+
+#EXTINF:0,PRO TV Chișinău
+http://hls.protv.md/hls/protv.m3u8
+
+#EXTINF:0,Publika TV
+https://livebeta.publika.md/LIVE/P/1500.m3u8
+
+#EXTINF:0,TV8
+http://live.cdn.tv8.md/TV7/tracks-v1a1/index.m3u8?token=1
+
+#EXTINF:0,TV Nord
+https://hls.tvn.md/hls/tvn_balti.m3u8
+
+#EXTINF:0,TVR Moldova
+http://89.136.209.30:1935/liveedge/TVRMOLDOVA.stream/playlist.m3u8
+
+#EXTINF:0,Vocea Basarabiei TV
+http://hls.voceabasarabiei.md/hls/vocea_basarabiei.m3u8
